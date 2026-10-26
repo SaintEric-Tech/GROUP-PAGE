@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet our group</title>
+<style>
+  :root {
+    --bg: #f2f5f7;
+    --ink: #14232b;
+    --muted: #51636d;
+    --card: #ffffff;
+    --accent: #0b6e8a;
+    --accent-ink: #ffffff;
+    --line: #d5dee3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  header { max-width: 720px; margin: 0 auto; padding: 56px 24px 24px; }
+  h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 12px; }
+  header p { margin: 0; max-width: 56ch; color: var(--muted); font-size: 1.1rem; }
+  .grid {
+    max-width: 720px; margin: 0 auto; padding: 24px 24px 64px;
+    display: grid; gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; background: var(--line); }
+  .info { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .info h2 { margin: 0; font-size: 1.3rem; }
+  .role { margin: 0; color: var(--muted); font-size: 0.98rem; }
+  .reg { margin: 0; font-family: system-ui, sans-serif; font-size: 0.9rem; color: var(--ink); }
+  .btn {
+    margin-top: auto; align-self: flex-start;
+    background: var(--accent); color: var(--accent-ink);
+    text-decoration: none; padding: 10px 18px; border-radius: 8px;
+    font-family: system-ui, sans-serif; font-weight: 600; font-size: 0.95rem;
+  }
+  .info .btn { margin-top: 14px; }
+  .btn:hover { background: #09566d; }
+  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Meet our group</h1>
+  <p>Two people, one project. Open a portfolio to see each member's own work.</p>
+</header>
+
+<!--
+  HOW TO EDIT:
+  1. Put each member's photo in an "images" folder next to this file (e.g. images/john.jpg).
+  2. For each card below, change the name, role, image path (src) and portfolio link (href).
+  3. Copy a whole <article>…</article> block to add a member; delete one to remove a member.
+-->
+<main class="grid">
+
+  <article class="card">
+    <img src="images/member1.jpeg" alt="Photo of Bisimwa Byamungu Jordan">
+    <div class="info">
+      <h2>Bisimwa Byamungu Jordan</h2>
+      <p class="role">Group leader</p>
+      <p class="reg">Reg No. 25/BCC/BU/R/0017</p>
+      <a class="btn" href="https://joebyam.github.io/MID-SEM-WEB-SITE/" target="_blank" rel="noopener">View portfolio</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <img src="images/member2.jpeg" alt="Photo of Muwonge John Eric">
+    <div class="info">
+      <h2>Muwonge John Eric</h2>
+      <p class="role">Group designer</p>
+      <p class="reg">Reg No. 26/BCC/BU/R/0007</p>
+      <a class="btn" href="https://sainteric-tech.github.io/Muwonge-John-Eric-Portifolio-Website/" target="_blank" rel="noopener">View portfolio</a>
+    </div>
+  </article>
+
+
+
+
+
+</main>
+
+</body>
+</html>
